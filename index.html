@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- CUSTOM STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <button class="start-quiz-btn">Start Quiz</button>
+        <div class="container">
+            <!-- Quiz Top Bar -->
+            <div class="quiz-top-bar">
+                <span class="no-of-question"></span>
+                <div class="timer-progress-bar"></div>
+            </div>
+
+            <!-- Question-container -->
+            <div class="ques-box"></div>
+            <!-- Answer Box -->
+            <div class="option-box"></div>
+            <button class="next-ques-btn">Next <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+        <div class="result-box">
+            <i class="fa-solid fa-crown"></i>
+            <span>you've completed the Quiz!</span>
+            <div class="score">
+                <span>Congrats! You scored 3 out of 5 &#x1F525;</span>
+            </div>
+            <button class="replay-quiz-btn">Play again</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
